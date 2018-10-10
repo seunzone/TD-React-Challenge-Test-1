@@ -1,14 +1,52 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  animation: colorchange 50s infinite; 
+  -webkit-animation: colorchange 50s infinite;
+}
+@keyframes colorchange /* for Safari and Chrome - */
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+@-webkit-keyframes colorchange /* for Safari and Chrome - */
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+.work-area {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 700px;
+  background-color: aliceblue;
+}
+.editable {
+  margin-top: 20px !important;
+  overflow: hidden;
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; 
+  /* margin: 0 auto;  */
+  letter-spacing: .10em;
+  animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.non-editable{
+  letter-spacing: .10em;
 }
