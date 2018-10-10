@@ -1,9 +1,11 @@
 {
-  "name": "td",
+  "name": "jv",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://seunzone.github.io/TD-React-Challenge-Test-1",
   "dependencies": {
     "bootstrap": "3",
+    "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
@@ -11,6 +13,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
