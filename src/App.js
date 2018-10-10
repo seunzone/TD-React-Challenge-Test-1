@@ -74,7 +74,9 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <button className="btn btn-primary text-white">Fetch Github API</button>
+          <a href="https://seunzone.github.io/TD-React-Challenge-Test-2"
+          target="_blank" rel="noopener noreferrer" 
+          className="btn btn-primary text-white">Fetch Github API Challenge</a>
         </div>
       </Fragment>
     );
