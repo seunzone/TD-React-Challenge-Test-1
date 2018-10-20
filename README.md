@@ -8,4 +8,4 @@ This repo contains code for the written tutorial published on medium for the And
 
 ## Demo
 Link to Demo App: https://seunzone.github.io/TD-React-Challenge-Test-1/
-Link to Medium Article: coming soon...
+Link to Medium Article: https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a
